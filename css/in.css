@@ -9,9 +9,9 @@ main {
 }
 .section {
   width: 100vw;
-  min-height: 400px;
+  /* min-height: 400px; */
   background: black;
-  background-size: contain;
+
   border-bottom: 8px solid #222;
 }
 .top {
@@ -143,6 +143,17 @@ main {
 .card img {
   width: 400px;
 }
-.footer {
-  border-bottom: 0;
+.faq {
+  box-sizing: border-box;
+  padding: 30px;
+  color: white;
+  height: auto;
 }
+.faq ul {
+  list-style-type: none;
+}
+/* .footer {
+  background-color: #e50914;
+  height: 40vh;
+  border-bottom: 0;
+ } */
