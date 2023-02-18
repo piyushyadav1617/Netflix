@@ -52,7 +52,7 @@ main {
   text-decoration: none;
   color: white;
 }
-.select-lang {
+.top .select-lang {
   width: 50px;
   /* background-color: #e50914; */
   color: white;
@@ -60,7 +60,7 @@ main {
   top: 25px;
   right: 220px;
 }
-.select-lang select {
+.top .select-lang select {
   color: white;
   width: 90px;
   padding: 9px 17px;
@@ -69,7 +69,7 @@ main {
   border: 1px solid rgb(160, 160, 160);
   border-radius: 2px;
 }
-.select-lang select option {
+.top .select-lang select option {
   cursor: pointer;
   background-color: rgb(162, 162, 162);
 }
@@ -206,8 +206,50 @@ main {
   height: fit-content;
 }
 
-/* .footer {
-  background-color: #e50914;
-  height: 40vh;
+.footer {
+  color: aliceblue;
   border-bottom: 0;
- } */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .select-lang {
+  width: 50px;
+  color: #737373;
+}
+.footer .select-lang select {
+  color: #737373;
+  width: 100px;
+  padding: 9px 17px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #737373;
+  border-radius: 2px;
+}
+.footer .select-lang select option {
+  cursor: pointer;
+  background-color: rgb(162, 162, 162);
+}
+.number a {
+  text-decoration: none;
+  color: #737373;
+}
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
+  color: #737373;
+  width: 80%;
+  font-size: 1rem;
+}
+.links {
+  list-style: none;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(40px, 4);
+}
+.links li a {
+  text-decoration: none;
+  color: #737373;
+}
