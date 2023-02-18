@@ -177,7 +177,7 @@ nav .select-lang select option {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 100px;
+  padding: 80px;
   text-align: start;
   /* line-height: 3rem; */
 }
@@ -303,7 +303,6 @@ nav .select-lang select option {
   width: 70vw;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: repeat(40px, 4);
 }
 .links li {
   margin-right: 10px;

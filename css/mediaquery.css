@@ -6,33 +6,6 @@
 
     line-height: 3rem;
 
-    top: 100px;
-  }
-  .hero h1 {
-    font-size: 3rem;
-  }
-  .hero h2 {
-    font-size: 1.2rem;
-    font-weight: lighter;
-  }
-  .hero h4 {
-    font-weight: lighter;
-    font-size: 1rem;
-  }
-  .hero input {
-    width: 100%;
-    padding: 20px 10px;
-    outline: none;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .hero {
-    padding: 10px;
-
-    width: 50%;
-
-    line-height: 3rem;
-
     top: 80px;
   }
   .hero h1 {
@@ -78,14 +51,13 @@
     /* height: fit-content; */
   }
 }
+
+/* for hero section only  */
 @media screen and (max-width: 1028px) {
   .hero {
     padding: 10px;
-
     width: 70%;
-
     line-height: 2.8rem;
-
     top: 100px;
   }
   .hero h1 {
@@ -107,12 +79,26 @@
 }
 
 @media screen and (max-width: 950px) {
+  .content {
+    line-height: 2rem;
+
+    font-size: 1rem;
+  }
+
+  .links {
+    width: 80vw;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  .top {
+    height: 70vh;
+  }
+
   .card {
     overflow: hidden;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 100%;
+    min-width: 100%;
     flex-direction: column;
   }
 
@@ -123,14 +109,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 100px; */
-    text-align: start;
+    padding: 60px;
+    text-align: center;
     /* line-height: 3rem; */
   }
   .card .text h1 {
     overflow: hidden;
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
   .card .text h2 {
     text-align: center;
@@ -153,35 +139,7 @@
     font-size: 2rem;
   }
 }
-
-@media screen and (max-width: 660px) {
-  .hero {
-    padding: 10px;
-
-    width: 70%;
-
-    line-height: 2.2rem;
-
-    top: 100px;
-  }
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-  .hero h2 {
-    font-size: 1.2rem;
-    font-weight: lighter;
-  }
-  .hero h4 {
-    font-weight: lighter;
-    font-size: 1rem;
-  }
-  .hero input {
-    width: 100%;
-    padding: 15px 5px;
-    outline: none;
-  }
-}
-
+/* only for vanbar */
 @media screen and (max-width: 768px) {
   nav {
     flex-wrap: wrap;
@@ -220,6 +178,66 @@
     width: auto;
   }
 }
+/* ------------------------------ */
+/* ------------------------------ */
+@media screen and (max-width: 660px) {
+  .content {
+    line-height: 2rem;
+
+    font-size: 0.85rem;
+  }
+
+  .links {
+    width: 80vw;
+    grid-template-columns: 50% 50%;
+  }
+
+  .hero {
+    padding: 10px;
+
+    width: 70%;
+
+    line-height: 2.2rem;
+
+    top: 100px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  .hero h4 {
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  .hero input {
+    width: 100%;
+    padding: 15px 5px;
+    outline: none;
+  }
+  .content-container {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .accordion .content-container .question {
+    font-size: 1.2rem;
+    height: 2.5rem;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+  }
+
+  .accordion .content-container .answer {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    height: 0px;
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .hero {
     padding: 10px;
@@ -285,14 +303,26 @@
     width: auto;
   }
 
+  /* for card */
+  .card .text h1 {
+    overflow: hidden;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .card .text h2 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
   .accordion-title {
+    text-align: center;
     /* margin: 10px auto; */
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .content-container {
     width: 100%;
-    margin: 5px auto;
   }
 
   .accordion .content-container .question {
