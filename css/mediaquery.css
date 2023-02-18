@@ -19,10 +19,8 @@
     font-weight: lighter;
     font-size: 1rem;
   }
-  .hero input {
+  .hero .signup {
     width: 100%;
-    padding: 20px 10px;
-    outline: none;
   }
 
   .card .text {
@@ -71,26 +69,33 @@
     font-weight: lighter;
     font-size: 0.9rem;
   }
-  .hero input {
+  /* .hero input {
     width: 100%;
     padding: 20px 10px;
     outline: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 950px) {
-  .content {
-    line-height: 2rem;
-
-    font-size: 1rem;
-  }
-
-  .links {
-    width: 80vw;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-  }
   .top {
     height: 70vh;
+  }
+
+  .hero .signup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .signup input {
+    border-radius: 3px;
+    width: 100%;
+    padding: 15px 5px;
+  }
+  .hero .signup button {
+    border-radius: 3px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px 5px;
   }
 
   .card {
@@ -132,6 +137,17 @@
   .card img {
     overflow: hidden;
     width: 60%;
+  }
+
+  .content {
+    line-height: 2rem;
+
+    font-size: 1rem;
+  }
+
+  .links {
+    width: 80vw;
+    grid-template-columns: 33.3% 33.3% 33.3%;
   }
 
   .accordion-title {
@@ -205,18 +221,23 @@
     font-size: 2.2rem;
   }
   .hero h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
   }
   .hero h4 {
     font-weight: lighter;
     font-size: 1rem;
   }
-  .hero input {
-    width: 100%;
-    padding: 15px 5px;
-    outline: none;
+
+  .hero .signup input {
+    border-radius: 1px;
+    padding: 10px 2px;
   }
+  .hero .signup button {
+    border-radius: 1px;
+    padding: 10px 2px;
+  }
+
   .content-container {
     width: 100%;
     margin: 5px auto;
@@ -254,8 +275,8 @@
   }
   .hero h2 {
     margin-top: 1.2rem;
-    font-size: 1.2rem;
-    font-weight: lighter;
+    font-size: 1rem;
+    font-weight: bolder;
   }
   .hero h4 {
     margin-top: 1.2rem;
@@ -338,5 +359,17 @@
     line-height: 1.4rem;
     height: 0px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    line-height: 1.8rem;
+
+    font-size: 0.7rem;
+  }
+
+  .links {
+    width: 90vw;
   }
 }
