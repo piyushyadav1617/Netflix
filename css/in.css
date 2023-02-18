@@ -208,6 +208,10 @@ nav .select-lang select option {
   text-align: start;
   /* line-height: 3rem; */
 }
+.second,
+.fourth {
+  flex-direction: row-reverse;
+}
 .card .text h1 {
   font-size: 3.6rem;
   margin-bottom: 30px;
