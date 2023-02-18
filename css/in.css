@@ -129,86 +129,6 @@ nav .select-lang select option {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin: 10px;
-    order: 1;
-  }
-  .logo img {
-    height: 30px;
-    width: auto;
-  }
-
-  .nav-right {
-    margin-right: 10px;
-    order: 3;
-  }
-  .select-lang select {
-    padding: 7px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid #737373;
-    border-radius: 2px;
-    color: white;
-    width: auto;
-    background: transparent;
-    font-size: 16px;
-    /* margin-top: 10px; */
-    margin-right: 10px;
-  }
-
-  .sign-in {
-    order: 2;
-    width: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin: 7px;
-    order: 1;
-  }
-  .logo img {
-    height: 30px;
-    width: auto;
-  }
-
-  .nav-right {
-    margin-right: 7px;
-    order: 3;
-  }
-  .select-lang {
-    margin-right: 0px;
-  }
-  .select-lang select {
-    padding: 7px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid #737373;
-    border-radius: 2px;
-    color: white;
-    width: auto;
-    background: transparent;
-    font-size: 14px;
-    /* margin-top: 10px; */
-    margin-right: 10px;
-  }
-
-  .sign-in {
-    order: 2;
-    width: auto;
-  }
-}
-
 .hero {
   padding: 10px;
   display: flex;
@@ -218,7 +138,7 @@ nav .select-lang select option {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  width: 50vw;
+  width: 50%;
   margin: 0 auto;
   line-height: 4rem;
   position: relative;
